@@ -1,0 +1,114 @@
+.containerMenu{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+
+.labelMenu {
+    position: fixed;
+    top: 2rem;
+    right: 6vw;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelMenu:hover {
+    cursor: pointer;
+}
+
+
+.burger {
+    width: 30px;
+    display: block;
+    position: fixed;
+    height: 2px;
+        background: $noir;
+    transition: 0.3s all ease-in-out;
+    top: 3.5rem;
+    left: 85vw;
+}
+
+.burger::before, .burger::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $noir;
+    right: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.burger::before {
+    top: -7px;
+}
+
+.burger::after {
+    bottom: -7px;
+}
+
+#checkbox_menu:checked + label > .burger {
+    background: none;
+}
+
+#checkbox_menu:checked + label > .burger::before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: $noir;
+}
+
+#checkbox_menu:checked + label > .burger::after {
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: $noir;
+}
+
+
+/**
+* Container Menu
+*/
+.containerMenu {
+    z-index: 45;
+    position: fixed;
+    top: -100vh;
+    margin-right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $blanc;
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .containerLinks {
+        width: 100%;
+        height: 60%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    a {
+        text-transform: lowercase;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-family: $serif;
+        font-size: 2rem;
+        line-height: 60px;
+        color: $noir;
+    }
+}
+
+
+
+
+
+}

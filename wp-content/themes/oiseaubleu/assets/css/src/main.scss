@@ -1,0 +1,28 @@
+////
+/// Import all files
+/// Order do matter
+///
+////
+
+/// Settings
+@import 'settings/colors';
+@import 'settings/fonts';
+
+// Generic
+@import 'generic/normalize';
+
+//Section
+
+@import 'sections/header';
+@import 'sections/footer';
+
+@import 'sections/burger';
+
+// Element
+@import 'elements/projet';
+@import 'elements/logo';
+@import 'elements/title';
+@import 'elements/button';
+
+// Tools (helper, mixins and function)
+// @import 'tools/'
