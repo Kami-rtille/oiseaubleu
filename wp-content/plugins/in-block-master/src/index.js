@@ -4,6 +4,7 @@
  * import './my-custom-block/block.js'
  */
 
+import './1-introduction/presentation-projet.js'
 import './1-projet/block.js'
 import './2-contact/block.js'
 import './3-article/block.js'
